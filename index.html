@@ -1,0 +1,376 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+        Live Football Match
+    </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+        }
+
+        .header {
+            background-color: #4a148c;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header img {
+            height: 40px;
+        }
+
+        .header nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .main {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 200px;
+            background-color: #2c2f33;
+            color: white;
+            padding: 20px;
+        }
+
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin: 10px 0;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .content .video {
+            background-color: black;
+            width: 100%;
+            height: 500px;
+            margin-bottom: 20px;
+        }
+
+        .content .video img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .content .scoreboard {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #e0e0e0;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .content .scoreboard div {
+            text-align: center;
+        }
+
+        .content .scoreboard img {
+            height: 50px;
+        }
+
+        .content .tabs {
+            display: flex;
+            justify-content: space-around;
+            background-color: #e0e0e0;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .content .tabs div {
+            cursor: pointer;
+        }
+
+        .content .tabs .active {
+            border-bottom: 2px solid #4a148c;
+        }
+
+        .content .stats {
+            display: flex;
+            justify-content: space-around;
+            background-color: #e0e0e0;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .content .stats div {
+            text-align: center;
+        }
+
+        .content .stats div p {
+            margin: 5px 0;
+        }
+
+        .chat {
+            width: 300px;
+            background-color: white;
+            border-left: 1px solid #e0e0e0;
+            padding: 20px;
+        }
+
+        .chat .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .chat .header img {
+            height: 40px;
+        }
+
+        .chat .messages {
+            height: 400px;
+            overflow-y: scroll;
+            margin-bottom: 20px;
+        }
+
+        .chat .messages div {
+            margin-bottom: 10px;
+        }
+
+        .chat .messages .system {
+            color: orange;
+        }
+
+        .chat .messages .user {
+            color: green;
+        }
+
+        .chat .input {
+            display: flex;
+            align-items: center;
+        }
+
+        .chat .input input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+        }
+
+        .chat .input button {
+            background-color: #4a148c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-left: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img alt="Logo" height="40"
+            src="https://storage.googleapis.com/a1aa/image/owfIOfou6vqCukT9LEXgCVTT9vuynGp2eB3B1ZseP6EggZAQB.jpg"
+            width="100" />
+        <nav>
+            <a href="#">
+                Trang chủ
+            </a>
+            <a href="#">
+                Live
+            </a>
+            <a href="#">
+                Lịch thi đấu
+            </a>
+            <a href="#">
+                Tin tức
+            </a>
+        </nav>
+        <div>
+            <input placeholder="Tìm kiếm" type="text" />
+            <button>
+                Tải xuống
+            </button>
+            <button>
+                leomessi
+            </button>
+        </div>
+    </div>
+    <div class="main">
+        <div class="sidebar">
+            <a href="#">
+                Gợi ý
+            </a>
+            <a href="#">
+                Bóng đá
+            </a>
+            <a href="#">
+                Bóng rổ
+            </a>
+            <a href="#">
+                Esports
+            </a>
+            <a href="#">
+                Khác
+            </a>
+        </div>
+        <div class="content">
+            <div class="video">
+                <img alt="Live football match" height="500"
+                    src="https://storage.googleapis.com/a1aa/image/x7f75H4N3KzuVyCtv9neGhfk9WYM2jk7c2jgepPfDABsAzAgC.jpg"
+                    width="800" />
+            </div>
+            <div class="scoreboard">
+                <div>
+                    <img alt="Thailand flag" height="50"
+                        src="https://storage.googleapis.com/a1aa/image/DxjC2rs6AabXLJEbv07jppzsqHA8mewscErQKAZcOE7BMDAKA.jpg"
+                        width="50" />
+                    <p>
+                        Thái Lan
+                    </p>
+                </div>
+                <div>
+                    <h1>
+                        2 - 1
+                    </h1>
+                    <p>
+                        Giải bóng đá Đông Nam Á
+                    </p>
+                    <p>
+                        12/10/2020 Đang live
+                    </p>
+                </div>
+                <div>
+                    <img alt="Philippines flag" height="50"
+                        src="https://storage.googleapis.com/a1aa/image/snsUPn5XmcIed6BYAu5K1ep5o6SireXleweCGkwUkPi7AzAgC.jpg"
+                        width="50" />
+                    <p>
+                        Philippines
+                    </p>
+                </div>
+            </div>
+            <div class="tabs">
+                <div class="active">
+                    Tình hình
+                </div>
+                <div>
+                    Dự kiến
+                </div>
+                <div>
+                    Thêm
+                </div>
+                <div>
+                    Cuộc trực tiếp
+                </div>
+            </div>
+            <div class="stats">
+                <div>
+                    <p>
+                        Tấn công
+                    </p>
+                    <p>
+                        87
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        Tấn công nguy hiểm
+                    </p>
+                    <p>
+                        37
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        Chiếm hữu
+                    </p>
+                    <p>
+                        49
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="chat">
+            <div class="header">
+                <img alt="User avatar" height="40"
+                    src="https://storage.googleapis.com/a1aa/image/GhocqqOfudxDfUVc7uQPxbyHhPBV4CQYvVEEkof5y8FDwMAoA.jpg"
+                    width="40" />
+                <div>
+                    <p>
+                        BLV_ENZO
+                    </p>
+                    <p>
+                        131
+                    </p>
+                </div>
+            </div>
+            <div class="messages">
+                <div class="system">
+                    Chào mừng bạn đến với phòng trực tiếp [BLV_ENZO]...
+                </div>
+                <div class="user">
+                    Seven: a thấy chưa a nói từ đầu rồi
+                </div>
+                <div class="user">
+                    haidseo: hay quá
+                </div>
+                <div class="user">
+                    leomessi: nghĩ kèo pen làm này
+                </div>
+                <div class="user">
+                    Seven: này thì cứ bài vớn
+                </div>
+                <div class="user">
+                    Seven: có hiệp phụ k
+                </div>
+                <div class="user">
+                    leomessi: 2-2 r
+                </div>
+                <div class="user">
+                    Seven: xin 1 góc nữaaaa
+                </div>
+                <div class="system">
+                    Chào mừng Lockocuibap tham gia phòng live
+                </div>
+                <div class="system">
+                    Chào mừng khách4426 tham gia phòng live
+                </div>
+                <div class="user">
+                    Seven: Phi đăng cấp thật cả giải chưa thua trận nào
+                </div>
+                <div class="user">
+                    Seven: tháng indo tháng thái suyết thần g vn
+                </div>
+                <div class="system">
+                    Chào mừng Heha tham gia phòng live
+                </div>
+                <div class="system">
+                    Chào mừng khách5477 tham gia phòng live
+                </div>
+                <div class="user">
+                    Seven: a hay đọc nhầm đấu huyền
+                </div>
+            </div>
+            <div class="input">
+                <input placeholder="Nhập tin nhắn..." type="text" />
+                <button>
+                    Gửi
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
